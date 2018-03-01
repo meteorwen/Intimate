@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume_qw</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<base href='file:\\\C:\Users\admin\Desktop\'/>
+</head>
+<body>
+<h1>Resume</h1>
+<hr />
+<table>
+<thead>
+<tr>
+	<th>姓名</th>
+	<th>性别</th>
+	<th>年龄</th>
+	<th>学历</th>
+	<th>户口</th>
+	<th>住址</th>
+	<th>电话</th>
+	<th>邮箱/<a href="http://github.com/meteorwen" title="github">github</a></th>
+	<th>照片</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>**</td>
+	<td>男</td>
+	<td>33</td>
+	<td>本科</td>
+	<td>西安</td>
+	<td>西安市建设西路</td>
+	<td><strong>18182509512</strong></td>
+	<td><em>meteor-i@163.com</em></td>
+	<td><img src="https://i.imgur.com/e34qBTZ.png" alt="Jelly" /></td>
+</tr>
+</tbody>
+</table>
+<h2>求职意向</h2>
+<blockquote>
+<ul>
+<li>工作性质：全职</li>
+<li>期望职业：互联网/数据挖掘/数据分析</li>
+<li>期望行业：IT服务(系统/数据/维护)/移动互联网</li>
+<li>工作地区：陕西-西安</li>
+<li>期望月薪：20000+元/月</li>
+<li>目前状况：我目前在职，正考虑换个新环境（如有合适的工作机会，到岗时间一个月左右）</li>
+</ul>
+</blockquote>
+<h2>工作经历</h2>
+<p>2017/02 -- 至今 <br>
+<strong>北京迪思杰数据管理有限公司|Title:大数据开发工经理</strong> <br>
+行业类别： IT服务(系统/数据/维护)|企业性质：民营|规模：100-499人|职位月薪：10001-15000元/月</p>
+<h3>工作描述：<br></h3>
+<blockquote>
+<ol>
+<li>熟练操作R、Python、Scala等脚本语言，从事大数据分析相关组件开发与平台开发； </li>
+<li>协助售前撰写项目可行方案技术落地书；</li>
+<li>独立搭建原生Hadoop生态圈与调用CDH5.11集群环境，操作mysql、sqlserver、hue、spark、hive、impala数据ETL过程抽取工作，熟练撰写shell脚本，集群环境调测；</li>
+<li>主要从事：数据挖掘常用算法和机器学习领域的研究与功能实现。利用Google开源的TensorFlow与mxnet框架，开发卷积神经网络和支持向量机对图像文件进行分类与预测；</li>
+<li>文本挖掘，情感分析，主题模型搭建与调优，文分类聚类与词云展现的相关工作；</li>
+</ol>
+</blockquote>
+<h4>项目案例：</h4>
+<h5>Case1:诈骗电话分析建模</h5>
+<p><img src="https://i.imgur.com/EPRWXvT.png" alt="phone" /></p>
+<blockquote>
+<p>一、根据现有数据源进行ETL处理。<br>
+1. 诈骗电话特征数据分析<br>
+2. 特征分析结果<br>
+3. 诈骗电话纬度分析<br>
+二、根据现有已知诈骗电话特点构建诈骗电话判别流程<br>
+1. 判别规则<br>
+2. 已确定诈骗电话清单<br>
+3. 选择适应的算法<br></p>
+</blockquote>
+<h4>Case2:医用图片判别疑似病灶分析建模</h4>
+<p><img src="https://i.imgur.com/9kLzIQJ.png" alt="pic" /></p>
+<blockquote>
+<p>一、数据预处理（ETL--模型可接受的数据类型）<br>
+1. 图片预处理<br>
+2. 特征提取处理<br>
+3. 转成特征张量<br>
+4. 图片分类测试操作流程<br>
+二、机器学习与深度学习算法比对<br>
+1. 机器学习：支持向量机SVM<br>
+2. 深度学习框架（卷积神经网络）<br></p>
+</blockquote>
+<hr />
+<p>2016/06 -- 2017/01<br>
+<strong>陕西动起房车管理有限公司|Title:系统开发经理</strong><br>
+行业类别： 互联网/电子商务|企业性质：民营|规模：20-99人|职位月薪：8001-10000元/月</p>
+<h3>工作描述：</h3>
+<blockquote>
+<ol>
+<li>负责公司系统平台，前后台业务逻辑实现工作。</li>
+<li>负责公司各模块、各部门的指标体系建设与指标落地工作，服务于生产、物流、财务、车辆维养部内日常运转。</li>
+<li>负责公司bug系统，禅道部署与推进工作。</li>
+<li>按照公司业务逻辑进行ETL（抽取/清洗/过滤），撰写SQL的存储过程，定时触发过程，夸服务器存储、查询。</li>
+<li>利用xmind、Visio撰写业务需求思维导图，指导系统架构与产品正常升级更新。</li>
+</ol>
+</blockquote>
+<hr />
+<p>2014/04 -- 2016/06<br>
+<strong>西安影子科技技术有限公司|Title:数据分析师</strong><br>
+行业类别： 互联网/电子商务|企业性质：民营|规模：20-99人|职位月薪：6001-8000元/月</p>
+<h3>工作描述：</h3>
+<blockquote>
+<ol>
+<li>运营指标体系设计与执行：熟练操作后台MySQL数据库，提取数据至前台报表自动化展示；用户分析模型，交叉分析，多维分析，勾勒用户画像（用户标签）。</li>
+<li>利用R语言和Python研究用户行为，为提高产品与用户粘性相关模型搭建分析；熟练操作excel使用VBA做相关分析与数据自动化处理；</li>
+<li>数据采集、清理、分析、建模、结果展示，建立并维护产品运营指标体系，定期完成数据报告；</li>
+<li>利用kettle工具对数据库内数据 ETL 报表开发前台展示工作和熟练应用R语言做数据清洗工作；</li>
+<li>通过对数据的处理，建立用户分析模型，交叉分析，多维分析，勾勒用户画像；按业务进行相关的数据挖掘方面工作，进行专项分析；</li>
+<li>与各部门沟通协商，解释数据在业务中所反映的问题，以改进工作流程，提高业务质量；</li>
+</ol>
+</blockquote>
+<hr />
+<p>2008/06 -- 2014/04<br>
+<strong>西安通信技术有限公司|Title:无线/射频通信工程师</strong><br>
+行业类别： 通信/电信运营、增值服务|企业性质：民营|规模：20-99人|职位月薪：10001-15000元/月</p>
+<h3>工作描述：</h3>
+<blockquote>
+<ol>
+<li>项目管理与KPI绩效考核</li>
+<li>无线基站勘察与审核；有线网络的图纸审核与规划</li>
+<li>无线、有线网络规划与仿真设计</li>
+<li>工程概预算制定与审核</li>
+<li>项目工程地市公司会审、省份公司会审协调统筹安排等</li>
+</ol>
+</blockquote>
+<h2>教育经历</h2>
+<p>2004/09 -- 2007/07<br>
+<strong>西北工业大学|电子信息科学与技术|统招</strong></p>
+<h2>自我评价</h2>
+<p>本人性格开朗、耐心细致，工作认真，有求知欲，具敬业精神、沟通能力和团队合作精神。学习能力强，有较强的组织能力、实际动手能力和团体协作精神，能迅速的适应各种环境，并融合其中。</p>
+<p><em>PS:为了节省彼此时间和精力。您在看过我的简历后，符合贵公司初步要求时，请务必提前安排一个技术电话面试或者简短的沟通，以了解彼此进一步的需求，提高面试的成功率。十分感谢！</em></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
